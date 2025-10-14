@@ -982,6 +982,10 @@ section,
   overflow: hidden;
 }
 
+.member-img {
+  height : 306px
+}
+
 .speakers .member .member-info {
   position: absolute;
   padding: 10px 0 50px 0;
@@ -1212,6 +1216,7 @@ section,
 
 .venue .venue-gallery img {
   transition: all ease-in-out 0.4s;
+  height: 320px;
 }
 
 .venue .venue-gallery:hover img {
