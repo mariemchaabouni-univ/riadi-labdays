@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 1280" role="img" aria-label="Coming soon">
+  <rect width="960" height="1280" fill="#0e1b4d"/>
+  <rect x="40" y="40" width="880" height="1200" fill="none" stroke="#65c7d8" stroke-width="8"/>
+  <text x="480" y="600" text-anchor="middle" fill="#ffffff" font-family="Raleway, Segoe UI, sans-serif" font-size="88" font-weight="700" letter-spacing="6">COMING</text>
+  <text x="480" y="710" text-anchor="middle" fill="#65c7d8" font-family="Raleway, Segoe UI, sans-serif" font-size="88" font-weight="700" letter-spacing="6">SOON</text>
+  <text x="480" y="790" text-anchor="middle" fill="#65c7d8" font-family="Raleway, Segoe UI, sans-serif" font-size="28" letter-spacing="3">RIADI LAB DAYS 2026</text>
+</svg>

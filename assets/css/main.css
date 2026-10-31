@@ -39,6 +39,15 @@
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
+/* Edition 2026 uses the poster teal instead of the previous orange accent. */
+body.edition-2026 {
+  --accent-color: #025d78;
+}
+
+body.edition-2026 .hero h2 span {
+  color: #65c7d8;
+}
+
 .light-background {
   --background-color: #f2f2f3;
   --surface-color: #ffffff;
@@ -1143,6 +1152,16 @@ section,
   margin-bottom: 5px;
 }
 
+.schedule .schedule-item a.session-link {
+  color: #025d78;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.schedule .schedule-item a.session-link:hover {
+  color: #01384a;
+}
+
 .schedule .schedule-item h4 span {
   font-style: italic;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
@@ -1693,4 +1712,199 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+/*--------------------------------------------------------------
+# Session detail pages — edition 2026
+--------------------------------------------------------------*/
+body.session-sheet {
+  background: #f4f7f8;
+}
+
+body.session-sheet .page-title h1 {
+  font-size: clamp(1.55rem, 3vw, 2.35rem);
+  line-height: 1.25;
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body.session-sheet .session-kicker {
+  margin-bottom: 12px;
+  color: #65c7d8;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.session-sheet-body {
+  padding: 48px 0 80px;
+}
+
+.session-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.session-chip {
+  background: #ffffff;
+  border: 1px solid color-mix(in srgb, #025d78, transparent 72%);
+  color: #025d78;
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-weight: 600;
+}
+
+.session-panel {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 28px 32px;
+  box-shadow: 0 10px 30px rgba(14, 27, 77, 0.06);
+  margin-bottom: 22px;
+}
+
+.session-panel h2,
+.session-block h3,
+.session-person h3 {
+  color: #0e1b4d;
+}
+
+.session-panel h2 {
+  font-size: 1.35rem;
+  margin-bottom: 16px;
+}
+
+.session-panel p,
+.session-block p,
+.session-person p {
+  color: #3d4a63;
+  line-height: 1.7;
+}
+
+.session-block {
+  border-left: 3px solid #025d78;
+  margin-bottom: 28px;
+  padding: 2px 0 4px 18px;
+}
+
+.session-block:last-child {
+  margin-bottom: 0;
+}
+
+.session-block time {
+  display: block;
+  margin-bottom: 6px;
+  color: #025d78;
+  font-weight: 700;
+}
+
+.session-block h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.session-role {
+  color: #215198;
+  font-weight: 600;
+}
+
+.session-part {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 8px 14px;
+  padding-top: 16px;
+  margin-top: 16px;
+  border-top: 1px solid #e6eef1;
+}
+
+.session-part-num {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #025d78;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.session-part h3 {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.session-note {
+  background: color-mix(in srgb, #65c7d8, white 84%);
+  border-radius: 14px;
+  padding: 16px 18px;
+  color: #0e1b4d;
+  font-weight: 600;
+}
+
+.session-people {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.session-person {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr);
+  align-items: start;
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(14, 27, 77, 0.06);
+}
+
+.session-person img {
+  display: block;
+  width: 200px;
+  height: 250px;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center top;
+  background: #e7edf4;
+}
+
+.session-person div {
+  padding: 18px 20px 22px;
+}
+
+.session-person h3 {
+  font-size: 1.15rem;
+  margin-bottom: 4px;
+}
+
+.session-back {
+  display: inline-flex;
+  margin-top: 8px;
+  color: #ffffff;
+  background: #025d78;
+  border-radius: 999px;
+  padding: 10px 22px;
+  font-weight: 600;
+}
+
+.session-back:hover {
+  color: #ffffff;
+  background: #01384a;
+}
+
+@media (max-width: 575px) {
+  .session-panel {
+    padding: 22px 18px;
+  }
+
+  .session-person {
+    grid-template-columns: 1fr;
+  }
+
+  .session-person img {
+    width: 100%;
+    height: 220px;
+  }
 }
