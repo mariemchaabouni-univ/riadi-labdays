@@ -83,15 +83,19 @@ body.edition-2026 .hero-theme-lead {
 }
 
 body.edition-2026 .hero .about-info .container {
-  max-width: 1140px;
-  padding-left: 40px;
-  padding-right: 40px;
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 100px;
+  padding-right: 100px;
+  box-sizing: border-box;
 }
 
 body.edition-2026 .hero .about-info .row {
   display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(0, 0.9fr) minmax(180px, 0.7fr);
-  column-gap: 36px;
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, 0.9fr) max-content;
+  column-gap: 48px;
   row-gap: 28px;
   margin-left: 0;
   margin-right: 0;
@@ -104,9 +108,26 @@ body.edition-2026 .hero .about-info .row > div {
   padding-right: 0;
 }
 
+body.edition-2026 .hero .about-info .row > div:last-child {
+  justify-self: end;
+  text-align: right;
+}
+
+@media (max-width: 1200px) {
+  body.edition-2026 .hero .about-info .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
 @media (max-width: 991px) {
   body.edition-2026 .hero .about-info .row {
     grid-template-columns: 1fr;
+  }
+
+  body.edition-2026 .hero .about-info .row > div:last-child {
+    justify-self: start;
+    text-align: left;
   }
 }
 
