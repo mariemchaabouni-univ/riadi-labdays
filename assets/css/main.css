@@ -48,6 +48,88 @@ body.edition-2026 .hero h2 span {
   color: #65c7d8;
 }
 
+body.edition-2026 .hero-theme {
+  margin-top: 22px;
+  max-width: 640px;
+}
+
+body.edition-2026 .hero-theme-kicker {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+body.edition-2026 .hero-theme-line {
+  margin: 8px 0 0;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #65c7d8;
+}
+
+body.edition-2026 .hero-theme-lead {
+  margin: 14px 0 0;
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+body.edition-2026 .hero .about-info .container {
+  max-width: 1140px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+body.edition-2026 .hero .about-info .row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, 0.9fr) minmax(180px, 0.7fr);
+  column-gap: 36px;
+  row-gap: 28px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+body.edition-2026 .hero .about-info .row > div {
+  width: auto;
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (max-width: 991px) {
+  body.edition-2026 .hero .about-info .row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  body.edition-2026 .hero .about-info .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  body.edition-2026 .hero-theme-kicker {
+    font-size: 12px;
+    letter-spacing: 0.08em;
+  }
+
+  body.edition-2026 .hero-theme-line {
+    font-size: 18px;
+  }
+
+  body.edition-2026 .hero-theme-lead {
+    font-size: 15px;
+  }
+}
+
 .light-background {
   --background-color: #f2f2f3;
   --surface-color: #ffffff;
@@ -1146,6 +1228,21 @@ section,
   transition: all ease-in-out 0.3s;
 }
 
+.schedule .program-download {
+  display: inline-block;
+  margin-top: 6px;
+  color: #ffffff;
+  background: #025d78;
+  border-radius: 4px;
+  padding: 10px 28px;
+  font-weight: 500;
+}
+
+.schedule .program-download:hover {
+  color: #ffffff;
+  background: #01384a;
+}
+
 .schedule .schedule-item h4 {
   font-size: 18px;
   font-weight: 600;
@@ -1550,6 +1647,13 @@ section,
 
 .buy-tickets .buy-btn:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.buy-tickets .buy-btn.is-disabled,
+.buy-tickets .featured .buy-btn.is-disabled {
+  pointer-events: none;
+  opacity: 0.45;
+  cursor: not-allowed;
 }
 
 .buy-tickets .featured {
