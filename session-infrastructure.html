@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Infrastructure de calcul fédérée — RIADI LAB DAYS 2026</title>
+  <link href="assets/img/favicon.png?v=20261031h" rel="icon" type="image/png">
+  <link href="assets/img/apple-touch-icon.png?v=20261031h" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/css/main.css?v=20261031i" rel="stylesheet">
+</head>
+
+<body class="session-sheet edition-2026">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="assets/img/logo.png" alt="RIADI">
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero">Accueil</a></li>
+          <li><a href="index.html#schedule" class="active">Programme</a></li>
+          <li><a href="index.html#speakers">Intervenants</a></li>
+          <li><a href="index.html#venue">Lieu</a></li>
+          <li><a href="index.html#buy-tickets">Participation</a></li>
+          <li><a href="index.html#gallery">Galerie</a></li>
+          <li class="dropdown"><a href="#"><span>Editions RIADI Lab days</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="index.html">LAB DAYS 2026</a></li>
+              <li><a href="event25.html">LAB DAYS 2025</a></li>
+              <li><a href="event24.html">LAB DAYS 2024</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="page-title" data-aos="fade" style="background-image: url(assets/img/banner.jpg);">
+      <div class="container position-relative">
+        <p class="session-kicker">Séminaire scientifique prospectif</p>
+        <h1>Vers une infrastructure de calcul fédérée pour le laboratoire RIADI</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#schedule">Programme</a></li>
+            <li class="current">Infrastructure de calcul</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <div class="session-sheet-body">
+      <div class="container">
+
+        <div class="session-chips" data-aos="fade-up">
+          <span class="session-chip">Vendredi 6 novembre 2026</span>
+          <span class="session-chip">20 h 00 – 21 h 00</span>
+          <span class="session-chip">Hammamet</span>
+        </div>
+
+        <div class="session-panel" data-aos="fade-up">
+          <h2>Résumé</h2>
+          <p>Le laboratoire RIADI dispose aujourd’hui de plusieurs ressources de calcul distribuées entre différents chercheurs. Parallèlement, le déploiement d’un nœud DIGITAfrica à l’ENSI a permis de mettre en place une plateforme moderne reposant sur Kubernetes, JupyterHub, MLflow et des services de stockage partagés.</p>
+          <p>Cette intervention présente le retour d’expérience du déploiement de cette plateforme et explore les perspectives d’évolution vers une infrastructure fédérée de calcul à l’échelle du laboratoire et pourquoi pas, à l’échelle de l’ENSI. L’objectif est d’intégrer les serveurs existants, les stations de travail à forte capacité de calcul et les futures ressources GPU dans un environnement commun, capable de fournir des services mutualisés d’expérimentation, d’entraînement de modèles d’intelligence artificielle, de stockage, de suivi des expériences et de collaboration scientifique.</p>
+          <p>Cette démarche vise à renforcer la valorisation des ressources existantes, améliorer leur taux d’utilisation et peut-être aussi préparer l’intégration du laboratoire dans les futures infrastructures numériques de recherche nationales et internationales.</p>
+        </div>
+
+        <div class="session-panel" data-aos="fade-up">
+          <h2>Déroulement</h2>
+
+          <div class="session-part">
+            <div class="session-part-num">1</div>
+            <div>
+              <h3>État des lieux des ressources de calcul du laboratoire</h3>
+              <ul>
+                <li>Infrastructure existante</li>
+                <li>Serveurs disponibles</li>
+                <li>Machines GPU</li>
+                <li>Ressources sous-utilisées</li>
+                <li>Besoins des équipes</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="session-part">
+            <div class="session-part-num">2</div>
+            <div>
+              <h3>Retour d’expérience sur le nœud DIGITAfrica déployé à l’ENSI</h3>
+              <p>Architecture déployée :</p>
+              <ul>
+                <li>Keycloak</li>
+                <li>JupyterHub</li>
+                <li>MLflow</li>
+                <li>K3s</li>
+                <li>NFS</li>
+                <li>S3 (en cours)</li>
+              </ul>
+              <p>Services actuellement disponibles :</p>
+              <ul>
+                <li>Expérimentation IA</li>
+                <li>Notebooks partagés</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="session-part">
+            <div class="session-part-num">3</div>
+            <div>
+              <h3>Vers une infrastructure fédérée RIADI et un portail unifié</h3>
+            </div>
+          </div>
+
+          <p>L’ambition est de construire une infrastructure fédérée de calcul et d’expérimentation permettant de valoriser collectivement les ressources matérielles et logicielles du laboratoire RIADI au service de ses activités de recherche, de formation et d’innovation.</p>
+        </div>
+
+        <h2 class="mb-3" style="color: #0e1b4d;">Intervenants</h2>
+        <div class="session-people" data-aos="fade-up">
+          <article class="session-person">
+            <img src="assets/img/speakers/mehrez-essafi.jpg" alt="Mehrez Essafi" style="object-position: center center;">
+            <div>
+              <h3>Dr. Mehrez Essafi</h3>
+              <p class="session-role">Intervenant</p>
+              <p>Dr. Mehrez Essafi est maître assistant à l’École Nationale des Sciences de l’Informatique (ENSI), Université de la Manouba, et chercheur au laboratoire RIADI. Ses travaux de recherche s’inscrivent à l’intersection du génie logiciel, de la sécurité des systèmes d’information, des architectures orientées services, du cloud computing et des infrastructures numériques de recherche.</p>
+              <p>Au cours de ses activités de recherche, il a contribué à plusieurs travaux portant sur le développement de logiciels sécurisés, la gouvernance de la sécurité des services web, la composition de services, la préservation de la confidentialité dans les environnements distribués et les modèles d’aide à la décision pour les architectures de services.</p>
+              <p>Il s’intéresse actuellement aux infrastructures de calcul mutualisées, à l’orchestration de services scientifiques, aux plateformes d’expérimentation basées sur Kubernetes ainsi qu’à la fédération des ressources de calcul pour soutenir les activités de recherche collaborative. Dans ce cadre, il participe notamment au projet euro-africain DIGITAfrica et au déploiement du nœud de recherche numérique de l’ENSI.</p>
+            </div>
+          </article>
+          <article class="session-person">
+            <img src="assets/img/speakers/intervenant-badri.jpg" alt="Nabil Badri">
+            <div>
+              <h3>Dr. Nabil Badri</h3>
+              <p class="session-role">Intervenant</p>
+              <p>Dr. Nabil Badri est ingénieur en chef au Centre de Calcul El Khawarizmi (CCK), où il assure le rôle de chef de projet HPC. Il contribue au déploiement et au développement d’une infrastructure nationale de calcul destinée à soutenir la recherche scientifique, l’innovation en intelligence artificielle et les applications scientifiques à forte intensité de calcul en Tunisie.</p>
+              <p>Il est également chercheur en intelligence artificielle et en traitement automatique du langage naturel (TALN) au sein du laboratoire RIADI de l’ENSI, Université de la Manouba. Titulaire d’un doctorat en informatique, spécialité intelligence artificielle, ses travaux de recherche portent notamment sur l’apprentissage profond, la détection des discours haineux et abusifs en arabe multilingue et multidialectal, ainsi que les grands modèles de langage (LLMs).</p>
+              <p>Il est membre de la communauté Deep Learning Indaba et participe activement à l’enseignement universitaire ainsi qu’à différentes initiatives scientifiques, contribuant au développement de la recherche en intelligence artificielle en Afrique.</p>
+            </div>
+          </article>
+        </div>
+
+        <a class="session-back" href="index.html#schedule">Retour au programme</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="copyright text-center">
+      <div class="container">
+        <div>© Copyright <strong><span>RIADI research laboratory</span></strong>. All Rights Reserved</div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

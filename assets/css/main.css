@@ -1961,6 +1961,16 @@ body.session-sheet .session-kicker {
   margin-bottom: 6px;
 }
 
+.session-part ul {
+  margin: 0 0 12px;
+  padding-left: 1.2rem;
+  color: #3d4a63;
+}
+
+.session-part li + li {
+  margin-top: 4px;
+}
+
 .session-note {
   background: color-mix(in srgb, #65c7d8, white 84%);
   border-radius: 14px;
