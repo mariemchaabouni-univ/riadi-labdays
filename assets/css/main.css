@@ -1934,13 +1934,29 @@ body.session-sheet .session-kicker {
   text-align: center;
 }
 
-.session-qr a {
+.session-qr .glightbox {
   display: inline-block;
 }
 
 .session-qr img {
   width: min(360px, 100%);
   height: auto;
+}
+
+.session-qr-form {
+  display: block;
+  width: fit-content;
+  margin: 16px auto 0;
+  color: #ffffff;
+  background: #025d78;
+  border-radius: 4px;
+  padding: 10px 28px;
+  font-weight: 500;
+}
+
+.session-qr-form:hover {
+  color: #ffffff;
+  background: #01384a;
 }
 
 .session-panel p,
